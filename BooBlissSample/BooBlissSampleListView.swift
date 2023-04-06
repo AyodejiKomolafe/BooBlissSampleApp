@@ -11,6 +11,7 @@ struct BooBlissSampleListView: View {
     var body: some View {
         NavigationView {
             Text("Boo Bliss List View")
+                .navigationTitle("🍟 Menu")
         }
     }
 }

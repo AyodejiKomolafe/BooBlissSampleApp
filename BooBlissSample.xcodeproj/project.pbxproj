@@ -14,6 +14,7 @@
 		484C072729DEF9BB0017E1DE /* BooBlissSampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */; };
 		484C072929DEF9D40017E1DE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072829DEF9D40017E1DE /* AccountView.swift */; };
 		484C072B29DEF9E20017E1DE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072A29DEF9E20017E1DE /* OrderView.swift */; };
+		484C072D29DF61140017E1DE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072C29DF61140017E1DE /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooBlissSampleListView.swift; sourceTree = "<group>"; };
 		484C072829DEF9D40017E1DE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		484C072A29DEF9E20017E1DE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		484C072C29DF61140017E1DE /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				484C072A29DEF9E20017E1DE /* OrderView.swift */,
 				484C071C29DEF8840017E1DE /* Assets.xcassets */,
 				484C071E29DEF8840017E1DE /* Preview Content */,
+				484C072C29DF61140017E1DE /* Menu.swift */,
 			);
 			path = BooBlissSample;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484C072D29DF61140017E1DE /* Menu.swift in Sources */,
 				484C072929DEF9D40017E1DE /* AccountView.swift in Sources */,
 				484C072729DEF9BB0017E1DE /* BooBlissSampleListView.swift in Sources */,
 				484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */,
