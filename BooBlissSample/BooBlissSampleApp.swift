@@ -11,7 +11,7 @@ import SwiftUI
 struct BooBlissSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BooBlissSampleTabView()
         }
     }
 }

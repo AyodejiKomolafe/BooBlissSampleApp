@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		484C071929DEF8820017E1DE /* BooBlissSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C071829DEF8820017E1DE /* BooBlissSampleApp.swift */; };
-		484C071B29DEF8820017E1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C071A29DEF8820017E1DE /* ContentView.swift */; };
+		484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C071A29DEF8820017E1DE /* BooBlissSampleTabView.swift */; };
 		484C071D29DEF8840017E1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C071C29DEF8840017E1DE /* Assets.xcassets */; };
 		484C072029DEF8840017E1DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C071F29DEF8840017E1DE /* Preview Assets.xcassets */; };
+		484C072729DEF9BB0017E1DE /* BooBlissSampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */; };
+		484C072929DEF9D40017E1DE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072829DEF9D40017E1DE /* AccountView.swift */; };
+		484C072B29DEF9E20017E1DE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C072A29DEF9E20017E1DE /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		484C071529DEF8820017E1DE /* BooBlissSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooBlissSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484C071829DEF8820017E1DE /* BooBlissSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooBlissSampleApp.swift; sourceTree = "<group>"; };
-		484C071A29DEF8820017E1DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		484C071A29DEF8820017E1DE /* BooBlissSampleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooBlissSampleTabView.swift; sourceTree = "<group>"; };
 		484C071C29DEF8840017E1DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484C071F29DEF8840017E1DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooBlissSampleListView.swift; sourceTree = "<group>"; };
+		484C072829DEF9D40017E1DE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		484C072A29DEF9E20017E1DE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				484C071829DEF8820017E1DE /* BooBlissSampleApp.swift */,
-				484C071A29DEF8820017E1DE /* ContentView.swift */,
+				484C071A29DEF8820017E1DE /* BooBlissSampleTabView.swift */,
 				484C071C29DEF8840017E1DE /* Assets.xcassets */,
 				484C071E29DEF8840017E1DE /* Preview Content */,
+				484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */,
+				484C072829DEF9D40017E1DE /* AccountView.swift */,
+				484C072A29DEF9E20017E1DE /* OrderView.swift */,
 			);
 			path = BooBlissSample;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484C071B29DEF8820017E1DE /* ContentView.swift in Sources */,
+				484C072929DEF9D40017E1DE /* AccountView.swift in Sources */,
+				484C072729DEF9BB0017E1DE /* BooBlissSampleListView.swift in Sources */,
+				484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */,
 				484C071929DEF8820017E1DE /* BooBlissSampleApp.swift in Sources */,
+				484C072B29DEF9E20017E1DE /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
