@@ -6,3 +6,9 @@
 //
 
 import Foundation
+enum MenuError: Error {
+    case invalidURL
+    case invalidResponse
+    case invalidData
+    case unableToComplete
+}
