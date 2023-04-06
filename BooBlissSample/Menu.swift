@@ -19,7 +19,7 @@ struct Menu: Decodable, Identifiable {
 }
 
 
-struct MenuResponse {
+struct MenuResponse: Decodable {
     let request: [Menu]
 }
 
