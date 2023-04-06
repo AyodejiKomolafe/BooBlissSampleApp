@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Menu: Decodable {
+struct Menu: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String
