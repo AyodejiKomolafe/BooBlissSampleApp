@@ -9,13 +9,24 @@ import SwiftUI
 
 struct BooBlissSampleTabView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            BooBlissSampleListView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            AccountView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Account")
+                }
+            OrderView()
+                .tabItem {
+                    Image(systemName: "bag")
+                    Text("Order")
+                }
         }
-        .padding()
+        .accentColor(Color("brandPrimary"))
     }
 }
 

@@ -59,11 +59,11 @@
 			children = (
 				484C071829DEF8820017E1DE /* BooBlissSampleApp.swift */,
 				484C071A29DEF8820017E1DE /* BooBlissSampleTabView.swift */,
-				484C071C29DEF8840017E1DE /* Assets.xcassets */,
-				484C071E29DEF8840017E1DE /* Preview Content */,
 				484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */,
 				484C072829DEF9D40017E1DE /* AccountView.swift */,
 				484C072A29DEF9E20017E1DE /* OrderView.swift */,
+				484C071C29DEF8840017E1DE /* Assets.xcassets */,
+				484C071E29DEF8840017E1DE /* Preview Content */,
 			);
 			path = BooBlissSample;
 			sourceTree = "<group>";
