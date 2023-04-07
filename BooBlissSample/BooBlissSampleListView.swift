@@ -8,30 +8,17 @@
 import SwiftUI
 
 struct BooBlissSampleListView: View {
-    @State private var menus: [Menu] = []
+    @StateObject var viewModel = BooBlissSampleListViewModel()
     
     var body: some View {
         NavigationView {
-            List(MockData.menus) { menu in
+            List(viewModel.menus) { menu in
                 MenuListCell(menu: menu)
             }
             .navigationTitle("🍟 Menu")
         }
         .onAppear{
-            getMenus()
-        }
-    }
-    
-    func getMenus() {
-        NetworkManager.shared.getMenus { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let menus):
-                    self.menus = menus
-                case .failure(let error ):
-                    print(error.localizedDescription)
-                }
-            }
+            viewModel.getMenus()
         }
     }
 }
