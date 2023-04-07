@@ -12,12 +12,21 @@ final class BooBlissSampleListViewModel: ObservableObject {
     
     func getMenus() {
         NetworkManager.shared.getMenus { result in
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [self] in
                 switch result {
                 case .success(let menus):
                     self.menus = menus
                 case .failure(let error ):
-                    print(error.localizedDescription)
+                    switch error {
+                    case .invalidURL:
+                        alertItem = AlertContext.invalidURL
+                    case .invalidResponse:
+                        alertItem = AlertContext.invalidResponse
+                    case .invalidData:
+                        alertItem = AlertContext.invalidData
+                    case .unableToComplete:
+                        alertItem = AlertContext.unableToComplete
+                    }
                 }
             }
         }
