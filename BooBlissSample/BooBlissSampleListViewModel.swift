@@ -9,10 +9,13 @@ import Foundation
 final class BooBlissSampleListViewModel: ObservableObject {
     @Published var menus: [Menu] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getMenus() {
+        isLoading = true
         NetworkManager.shared.getMenus { result in
             DispatchQueue.main.async { [self] in
+                isLoading = false
                 switch result {
                 case .success(let menus):
                     self.menus = menus
