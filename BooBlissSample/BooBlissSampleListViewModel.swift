@@ -8,6 +8,7 @@
 import Foundation
 final class BooBlissSampleListViewModel: ObservableObject {
     @Published var menus: [Menu] = []
+    @Published var alertItem: AlertItem?
     
     func getMenus() {
         NetworkManager.shared.getMenus { result in
