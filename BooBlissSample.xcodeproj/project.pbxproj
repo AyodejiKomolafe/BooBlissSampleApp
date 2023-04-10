@@ -23,6 +23,7 @@
 		484C073929E034410017E1DE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073829E034410017E1DE /* LoadingView.swift */; };
 		484C073B29E035110017E1DE /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073A29E035110017E1DE /* Color+Ext.swift */; };
 		484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073C29E4321F0017E1DE /* RemoteImage.swift */; };
+		484C074C29E43B090017E1DE /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C074B29E43B090017E1DE /* MenuDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		484C073829E034410017E1DE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		484C073A29E035110017E1DE /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		484C073C29E4321F0017E1DE /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		484C074B29E43B090017E1DE /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				484C073429E026F10017E1DE /* BooBlissSampleListViewModel.swift */,
 				484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */,
+				484C074B29E43B090017E1DE /* MenuDetailView.swift */,
 			);
 			path = MenuListView;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */,
 				484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */,
 				484C073729E02ED40017E1DE /* Alert.swift in Sources */,
+				484C074C29E43B090017E1DE /* MenuDetailView.swift in Sources */,
 				484C071929DEF8820017E1DE /* BooBlissSampleApp.swift in Sources */,
 				484C072B29DEF9E20017E1DE /* OrderView.swift in Sources */,
 			);
