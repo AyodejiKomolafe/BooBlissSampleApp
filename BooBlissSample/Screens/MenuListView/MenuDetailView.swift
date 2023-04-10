@@ -13,8 +13,7 @@ struct MenuDetailView: View {
     
     var body: some View {
         VStack {
-            Image("asian-flank-steak")
-                .resizable()
+            MenuRemoteImage(urlString: menu.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             VStack {

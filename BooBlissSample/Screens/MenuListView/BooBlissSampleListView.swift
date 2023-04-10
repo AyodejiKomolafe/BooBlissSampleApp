@@ -10,6 +10,7 @@ import SwiftUI
 struct BooBlissSampleListView: View {
     @StateObject var viewModel = BooBlissSampleListViewModel()
     @State private var isShowingDetail = false
+    @State private var selectedMenu: Menu?
     
     var body: some View {
         ZStack {
@@ -17,6 +18,7 @@ struct BooBlissSampleListView: View {
                 List(viewModel.menus) { menu in
                     MenuListCell(menu: menu)
                         .onTapGesture {
+                            selectedMenu = menu
                             isShowingDetail = true
                         }
                 }
@@ -28,7 +30,7 @@ struct BooBlissSampleListView: View {
             }
             .blur(radius: isShowingDetail ? 20 : 0)
             if isShowingDetail {
-                MenuDetailView(menu: MockData.sampleMenu, isShowingDetail: $isShowingDetail)
+                MenuDetailView(menu: selectedMenu!, isShowingDetail: $isShowingDetail)
             }
             if viewModel.isLoading {
                 LoadingView()
