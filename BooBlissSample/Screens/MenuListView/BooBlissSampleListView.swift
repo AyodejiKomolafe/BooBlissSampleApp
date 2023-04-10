@@ -21,12 +21,14 @@ struct BooBlissSampleListView: View {
                         }
                 }
                 .navigationTitle("🍟 Menu")
+                .disabled(isShowingDetail)
             }
             .onAppear{
                 viewModel.getMenus()
             }
+            .blur(radius: isShowingDetail ? 20 : 0)
             if isShowingDetail {
-                MenuDetailView(menu: MockData.sampleMenu)
+                MenuDetailView(menu: MockData.sampleMenu, isShowingDetail: $isShowingDetail)
             }
             if viewModel.isLoading {
                 LoadingView()

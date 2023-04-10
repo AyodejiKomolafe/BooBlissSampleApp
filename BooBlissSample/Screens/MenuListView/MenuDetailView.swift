@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuDetailView: View {
     let menu: Menu
+    @Binding var isShowingDetail: Bool
     
     var body: some View {
         VStack {
@@ -76,7 +77,7 @@ struct MenuDetailView: View {
         .cornerRadius(12)
         .shadow(radius: 40)
         .overlay(Button {
-            print("dismiss")
+            isShowingDetail = false
         } label: {
             ZStack {
                 Circle()
@@ -96,6 +97,6 @@ struct MenuDetailView: View {
 
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuDetailView(menu: MockData.sampleMenu)
+        MenuDetailView(menu: MockData.sampleMenu, isShowingDetail: .constant(true))
     }
 }
