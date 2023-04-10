@@ -27,6 +27,7 @@
 		484C074F29E4453A0017E1DE /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C074E29E4453A0017E1DE /* MenuButton.swift */; };
 		484C075129E446580017E1DE /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C075029E446580017E1DE /* XDismissButton.swift */; };
 		484C075329E454670017E1DE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C075229E454670017E1DE /* AccountViewModel.swift */; };
+		484C075529E455D10017E1DE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C075429E455D10017E1DE /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		484C074E29E4453A0017E1DE /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		484C075029E446580017E1DE /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		484C075229E454670017E1DE /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		484C075429E455D10017E1DE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				484C073A29E035110017E1DE /* Color+Ext.swift */,
+				484C075429E455D10017E1DE /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				484C073129DF68030017E1DE /* NetworkManager.swift in Sources */,
 				484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */,
 				484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */,
+				484C075529E455D10017E1DE /* String+Ext.swift in Sources */,
 				484C073729E02ED40017E1DE /* Alert.swift in Sources */,
 				484C074F29E4453A0017E1DE /* MenuButton.swift in Sources */,
 				484C074C29E43B090017E1DE /* MenuDetailView.swift in Sources */,
