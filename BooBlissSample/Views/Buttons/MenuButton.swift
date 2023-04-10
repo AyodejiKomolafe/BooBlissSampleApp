@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MenuButton: View {
-    let title: String
+    let title: LocalizedStringKey
     var body: some View {
         Text(title)
             .font(.title2)

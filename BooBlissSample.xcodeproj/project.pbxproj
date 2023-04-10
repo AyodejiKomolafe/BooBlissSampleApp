@@ -25,6 +25,7 @@
 		484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073C29E4321F0017E1DE /* RemoteImage.swift */; };
 		484C074C29E43B090017E1DE /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C074B29E43B090017E1DE /* MenuDetailView.swift */; };
 		484C074F29E4453A0017E1DE /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C074E29E4453A0017E1DE /* MenuButton.swift */; };
+		484C075129E446580017E1DE /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C075029E446580017E1DE /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		484C073C29E4321F0017E1DE /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		484C074B29E43B090017E1DE /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		484C074E29E4453A0017E1DE /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		484C075029E446580017E1DE /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				484C074E29E4453A0017E1DE /* MenuButton.swift */,
+				484C075029E446580017E1DE /* XDismissButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				484C073329DF68F00017E1DE /* MenuError.swift in Sources */,
 				484C073529E026F10017E1DE /* BooBlissSampleListViewModel.swift in Sources */,
+				484C075129E446580017E1DE /* XDismissButton.swift in Sources */,
 				484C072D29DF61140017E1DE /* Menu.swift in Sources */,
 				484C072F29DF66C70017E1DE /* MenuListCell.swift in Sources */,
 				484C073B29E035110017E1DE /* Color+Ext.swift in Sources */,
