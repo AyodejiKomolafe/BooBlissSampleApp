@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct OrderView: View {
+    @State private var orderItems = MockData.orderItems
     var body: some View {
         NavigationView {
-            Text("Order View")
-                .navigationTitle("🧾 Orders ")
+            VStack {
+                List {
+                    ForEach(orderItems) { menu in
+                        MenuListCell(menu: menu)
+                    }
+                    .onDelete { indexSet in
+                        orderItems.remove(atOffsets: indexSet)
+                    }
+                }
+                .listStyle(PlainListStyle())
+                Button {
+                    print("order placed")
+                } label: {
+                    MenuButton(title: "$99.99 - Place Order")
+                }
+                .padding(.bottom, 25)
+
+            }
+            .navigationTitle("🧾 Orders ")
         }
     }
 }

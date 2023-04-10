@@ -20,6 +20,10 @@ struct AccountView: View {
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled(true)
+                    TextField("Address", text: $viewModel.user.address)
+                        .autocorrectionDisabled(true)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     DatePicker("Birthday", selection: $viewModel.user.birthdate, displayedComponents: .date)
                     Button {
                         viewModel.saveChanges()
@@ -37,6 +41,9 @@ struct AccountView: View {
                 .padding(.leading, -10)
             }
             .navigationTitle("💳 Account")
+        }
+        .onAppear {
+            viewModel.retrieveUser()
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
