@@ -9,17 +9,24 @@ import SwiftUI
 
 struct BooBlissSampleListView: View {
     @StateObject var viewModel = BooBlissSampleListViewModel()
+    @State private var isShowingDetail = false
     
     var body: some View {
         ZStack {
             NavigationView {
                 List(viewModel.menus) { menu in
                     MenuListCell(menu: menu)
+                        .onTapGesture {
+                            isShowingDetail = true
+                        }
                 }
                 .navigationTitle("🍟 Menu")
             }
             .onAppear{
                 viewModel.getMenus()
+            }
+            if isShowingDetail {
+                MenuDetailView(menu: MockData.sampleMenu)
             }
             if viewModel.isLoading {
                 LoadingView()
