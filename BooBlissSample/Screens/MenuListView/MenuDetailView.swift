@@ -25,33 +25,9 @@ struct MenuDetailView: View {
                     .font(.body)
                     .padding()
                 HStack(spacing: 40) {
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        Text("\(menu.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        Text("\(menu.carbs)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        Text("\(menu.protein)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    NutritionInfo(title: "Calories", value: menu.calories)
+                    NutritionInfo(title: "Carbs", value: menu.carbs)
+                    NutritionInfo(title: "Protein", value: menu.protein)
                 }
             }
             Spacer()
@@ -63,7 +39,7 @@ struct MenuDetailView: View {
                 
             }
             .padding(.bottom, 30)
-
+            
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
@@ -75,12 +51,29 @@ struct MenuDetailView: View {
             XDismissButton()
         }, alignment: .topTrailing)
         
-
+        
     }
 }
 
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
         MenuDetailView(menu: MockData.sampleMenu, isShowingDetail: .constant(true))
+    }
+}
+
+struct NutritionInfo: View {
+    let title: String
+    let value: Int
+    
+    var body: some View {
+        VStack(spacing: 5) {
+            Text(title)
+                .font(.caption)
+                .fontWeight(.bold)
+            Text("\(value)")
+                .foregroundColor(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+        }
     }
 }
