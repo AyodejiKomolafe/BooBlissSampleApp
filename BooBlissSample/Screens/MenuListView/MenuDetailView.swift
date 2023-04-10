@@ -59,7 +59,7 @@ struct MenuDetailView: View {
             Button {
                 print("tapped")
             } label: {
-                Text("Button")
+                Text("$\(menu.price, specifier: "%.2f") - Add to Order")
                     .font(.title2)
                     .fontWeight(.semibold)
                     .frame(width: 260, height: 50)
@@ -75,7 +75,22 @@ struct MenuDetailView: View {
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 40)
+        .overlay(Button {
+            print("dismiss")
+        } label: {
+            ZStack {
+                Circle()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(.white)
+                    .opacity(0.6)
+                Image(systemName: "xmark")
+                    .imageScale(.small)
+                    .frame(width: 44, height: 44)
+                    .foregroundColor(.black)
+            }
+        }, alignment: .topTrailing)
         
+
     }
 }
 
