@@ -75,22 +75,13 @@
 		484C071729DEF8820017E1DE /* BooBlissSample */ = {
 			isa = PBXGroup;
 			children = (
+				484C074629E439860017E1DE /* Model */,
+				484C074229E4393C0017E1DE /* Utilities */,
+				484C074729E439A80017E1DE /* Views */,
+				484C073E29E438CC0017E1DE /* Screens */,
 				484C071829DEF8820017E1DE /* BooBlissSampleApp.swift */,
-				484C071A29DEF8820017E1DE /* BooBlissSampleTabView.swift */,
-				484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */,
-				484C072829DEF9D40017E1DE /* AccountView.swift */,
-				484C072A29DEF9E20017E1DE /* OrderView.swift */,
-				484C072C29DF61140017E1DE /* Menu.swift */,
 				484C071C29DEF8840017E1DE /* Assets.xcassets */,
 				484C071E29DEF8840017E1DE /* Preview Content */,
-				484C072E29DF66C70017E1DE /* MenuListCell.swift */,
-				484C073029DF68030017E1DE /* NetworkManager.swift */,
-				484C073229DF68F00017E1DE /* MenuError.swift */,
-				484C073429E026F10017E1DE /* BooBlissSampleListViewModel.swift */,
-				484C073629E02ED40017E1DE /* Alert.swift */,
-				484C073829E034410017E1DE /* LoadingView.swift */,
-				484C073A29E035110017E1DE /* Color+Ext.swift */,
-				484C073C29E4321F0017E1DE /* RemoteImage.swift */,
 			);
 			path = BooBlissSample;
 			sourceTree = "<group>";
@@ -101,6 +92,119 @@
 				484C071F29DEF8840017E1DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		484C073E29E438CC0017E1DE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				484C071A29DEF8820017E1DE /* BooBlissSampleTabView.swift */,
+				484C074129E438EC0017E1DE /* OrderView */,
+				484C074029E438E40017E1DE /* AccountView */,
+				484C073F29E438D50017E1DE /* MenuListView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		484C073F29E438D50017E1DE /* MenuListView */ = {
+			isa = PBXGroup;
+			children = (
+				484C073429E026F10017E1DE /* BooBlissSampleListViewModel.swift */,
+				484C072629DEF9BB0017E1DE /* BooBlissSampleListView.swift */,
+			);
+			path = MenuListView;
+			sourceTree = "<group>";
+		};
+		484C074029E438E40017E1DE /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				484C072829DEF9D40017E1DE /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		484C074129E438EC0017E1DE /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				484C072A29DEF9E20017E1DE /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		484C074229E4393C0017E1DE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				484C074529E439680017E1DE /* Alert */,
+				484C074429E439570017E1DE /* Extensions */,
+				484C074329E4394C0017E1DE /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		484C074329E4394C0017E1DE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				484C073029DF68030017E1DE /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		484C074429E439570017E1DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				484C073A29E035110017E1DE /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		484C074529E439680017E1DE /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				484C073229DF68F00017E1DE /* MenuError.swift */,
+				484C073629E02ED40017E1DE /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		484C074629E439860017E1DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				484C072C29DF61140017E1DE /* Menu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		484C074729E439A80017E1DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				484C074A29E439C70017E1DE /* Image */,
+				484C074929E439C00017E1DE /* Cells */,
+				484C074829E439B50017E1DE /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		484C074829E439B50017E1DE /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				484C073829E034410017E1DE /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		484C074929E439C00017E1DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				484C072E29DF66C70017E1DE /* MenuListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		484C074A29E439C70017E1DE /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				484C073C29E4321F0017E1DE /* RemoteImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

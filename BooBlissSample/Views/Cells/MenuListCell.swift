@@ -11,8 +11,7 @@ struct MenuListCell: View {
     let menu: Menu
     var body: some View {
         HStack {
-            Image("asian-flank-steak")
-                .resizable()
+            MenuRemoteImage(urlString: menu.imageURL )
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
