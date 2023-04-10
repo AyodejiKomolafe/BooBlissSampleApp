@@ -24,6 +24,7 @@
 		484C073B29E035110017E1DE /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073A29E035110017E1DE /* Color+Ext.swift */; };
 		484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073C29E4321F0017E1DE /* RemoteImage.swift */; };
 		484C074C29E43B090017E1DE /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C074B29E43B090017E1DE /* MenuDetailView.swift */; };
+		484C074F29E4453A0017E1DE /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C074E29E4453A0017E1DE /* MenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		484C073A29E035110017E1DE /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		484C073C29E4321F0017E1DE /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		484C074B29E43B090017E1DE /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
+		484C074E29E4453A0017E1DE /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		484C074729E439A80017E1DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				484C074D29E445270017E1DE /* Buttons */,
 				484C074A29E439C70017E1DE /* Image */,
 				484C074929E439C00017E1DE /* Cells */,
 				484C074829E439B50017E1DE /* UIKit Components */,
@@ -208,6 +211,14 @@
 				484C073C29E4321F0017E1DE /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		484C074D29E445270017E1DE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				484C074E29E4453A0017E1DE /* MenuButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */,
 				484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */,
 				484C073729E02ED40017E1DE /* Alert.swift in Sources */,
+				484C074F29E4453A0017E1DE /* MenuButton.swift in Sources */,
 				484C074C29E43B090017E1DE /* MenuDetailView.swift in Sources */,
 				484C071929DEF8820017E1DE /* BooBlissSampleApp.swift in Sources */,
 				484C072B29DEF9E20017E1DE /* OrderView.swift in Sources */,
