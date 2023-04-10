@@ -9,8 +9,6 @@ import SwiftUI
 
 struct BooBlissSampleListView: View {
     @StateObject var viewModel = BooBlissSampleListViewModel()
-    @State private var isShowingDetail = false
-    @State private var selectedMenu: Menu?
     
     var body: some View {
         ZStack {
@@ -18,19 +16,20 @@ struct BooBlissSampleListView: View {
                 List(viewModel.menus) { menu in
                     MenuListCell(menu: menu)
                         .onTapGesture {
-                            selectedMenu = menu
-                            isShowingDetail = true
+                            viewModel.selectedMenu = menu
+                            viewModel.isShowingDetail = true
                         }
                 }
                 .navigationTitle("🍟 Menu")
-                .disabled(isShowingDetail)
+                .disabled(viewModel.isShowingDetail)
             }
             .onAppear{
                 viewModel.getMenus()
             }
-            .blur(radius: isShowingDetail ? 20 : 0)
-            if isShowingDetail {
-                MenuDetailView(menu: selectedMenu!, isShowingDetail: $isShowingDetail)
+            .blur(radius: viewModel.isShowingDetail ? 20 : 0)
+            
+            if viewModel.isShowingDetail {
+                MenuDetailView(menu: viewModel.selectedMenu!, isShowingDetail: $viewModel.isShowingDetail)
             }
             if viewModel.isLoading {
                 LoadingView()
