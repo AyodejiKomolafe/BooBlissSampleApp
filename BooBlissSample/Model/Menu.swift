@@ -24,7 +24,7 @@ struct MenuResponse: Decodable {
 }
 
 struct MockData {
-    static let sampleMenu = Menu(id: 001, name: "Test Menu", description: "This is the description for my menu", price: 10.0, imageURL: "", calories: 10, protein: 10, carbs: 10)
+    static let sampleMenu = Menu(id: 001, name: "Test Menu", description: "This is the description for my menu, its yummy", price: 10.0, imageURL: "", calories: 10, protein: 10, carbs: 10)
     
     static let menus = [sampleMenu, sampleMenu, sampleMenu, sampleMenu]
 }
