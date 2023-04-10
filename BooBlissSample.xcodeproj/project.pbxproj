@@ -22,6 +22,7 @@
 		484C073729E02ED40017E1DE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073629E02ED40017E1DE /* Alert.swift */; };
 		484C073929E034410017E1DE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073829E034410017E1DE /* LoadingView.swift */; };
 		484C073B29E035110017E1DE /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073A29E035110017E1DE /* Color+Ext.swift */; };
+		484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C073C29E4321F0017E1DE /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		484C073629E02ED40017E1DE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		484C073829E034410017E1DE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		484C073A29E035110017E1DE /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		484C073C29E4321F0017E1DE /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				484C073629E02ED40017E1DE /* Alert.swift */,
 				484C073829E034410017E1DE /* LoadingView.swift */,
 				484C073A29E035110017E1DE /* Color+Ext.swift */,
+				484C073C29E4321F0017E1DE /* RemoteImage.swift */,
 			);
 			path = BooBlissSample;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				484C073929E034410017E1DE /* LoadingView.swift in Sources */,
 				484C072729DEF9BB0017E1DE /* BooBlissSampleListView.swift in Sources */,
 				484C073129DF68030017E1DE /* NetworkManager.swift in Sources */,
+				484C073D29E4321F0017E1DE /* RemoteImage.swift in Sources */,
 				484C071B29DEF8820017E1DE /* BooBlissSampleTabView.swift in Sources */,
 				484C073729E02ED40017E1DE /* Alert.swift in Sources */,
 				484C071929DEF8820017E1DE /* BooBlissSampleApp.swift in Sources */,
