@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MenuDetailView: View {
+    @EnvironmentObject var order: Order
+    
     let menu: Menu
     @Binding var isShowingDetail: Bool
     
@@ -33,7 +35,8 @@ struct MenuDetailView: View {
             Spacer()
             
             Button {
-                print("tapped")
+                order.add(menu)
+                isShowingDetail = false
             } label: {
                 MenuButton(title: "$\(menu.price, specifier: "%.2f") - Add to Order")
                 
