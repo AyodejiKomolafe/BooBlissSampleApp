@@ -21,10 +21,13 @@ struct AccountView: View {
                 Section(header: Text("Personal Info")) {
                     TextField("First Name", text: $viewModel.user.firstName)
                         .focused($focusedTextField, equals: .firstName)
+                    
                     TextField("Last Name", text: $viewModel.user.lastName)
                         .focused($focusedTextField, equals: .lastName)
+                    
                     TextField("Email", text: $viewModel.user.email)
                         .focused($focusedTextField, equals: .email)
+                    
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled(true)
