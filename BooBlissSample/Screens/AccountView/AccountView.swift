@@ -24,18 +24,21 @@ struct AccountView: View {
                         .onSubmit {
                             focusedTextField = .lastName
                         }
+                        .submitLabel(.next)
                     
                     TextField("Last Name", text: $viewModel.user.lastName)
                         .focused($focusedTextField, equals: .lastName)
                         .onSubmit {
                             focusedTextField = .email
                         }
+                        .submitLabel(.next)
                     
                     TextField("Email", text: $viewModel.user.email)
                         .focused($focusedTextField, equals: .email)
                         .onSubmit {
                             focusedTextField = nil
                         }
+                        .submitLabel(.continue)
                     
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
