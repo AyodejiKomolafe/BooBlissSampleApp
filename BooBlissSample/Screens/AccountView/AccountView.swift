@@ -64,6 +64,13 @@ struct AccountView: View {
                 .padding(.leading, -10)
             }
             .navigationTitle("💳 Account")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button("Dismiss") {
+                        focusedTextField = nil
+                    }
+                }
+            }
         }
         .onAppear {
             viewModel.retrieveUser()
