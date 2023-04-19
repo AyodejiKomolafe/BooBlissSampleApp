@@ -15,6 +15,7 @@ struct BooBlissSampleListView: View {
             NavigationView {
                 List(viewModel.menus) { menu in
                     MenuListCell(menu: menu)
+                        .listRowSeparator(.hidden)
                         .onTapGesture {
                             viewModel.selectedMenu = menu
                             viewModel.isShowingDetail = true

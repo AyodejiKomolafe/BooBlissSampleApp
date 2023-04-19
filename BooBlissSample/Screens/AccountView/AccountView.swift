@@ -9,7 +9,11 @@ import SwiftUI
 
 struct AccountView: View {
     @StateObject var viewModel = AccountViewModel()
+    @FocusState private var focusedTextField: FormTextField?
     
+    enum FormTextField {
+        case firstName, lastName, email
+    }
     var body: some View {
         NavigationView {
             Form {
